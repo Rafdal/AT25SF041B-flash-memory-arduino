@@ -11,10 +11,11 @@
 #define DEVICE_ID1 0x84         //  AT25SFxxx series,  4 Mbit
 #define DEVICE_ID2 0x01         //  
 
+#define READ_STATUS_REG1            0x05
 // SRP0 | BP4 | BP3 | BP2 | BP1 | BP0 | WEL (Write Enabled) | BUSY
-#define BUSY_STATUS_FLAG 0x01
+#define BUSY_STATUS_FLAG            0x01
+#define WRITE_ENABLE_STATUS_FLAG    0x02 // WEL (Write Enabled) bit in status register
 
-#define READ_STATUS_REG1    0x05
 
 #define WRITE_ENABLE        0x06
 #define BYTE_PAGE_PROGRAM   0x02
